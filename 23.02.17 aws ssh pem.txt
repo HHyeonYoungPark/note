@@ -1,0 +1,37 @@
+23.02.16
+
+- git - vscode 연동
+- 프로그램 설치, 셋팅
+- 학습관리시스템 인수인계 문서, 메뉴얼 파악
+- 기존 코드, db 구조 파악
+- AWS 이론
+
+
+aws 서버 접속시 Permission denied(publickey) 에러, 서버접속x
+ssh pem 파일 권한변경
+참고 링크
+https://dabid.tistory.com/m/entry/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-SSH-%EC%A0%91%EC%86%8D-%EC%8B%9C-pem-%ED%8C%8C%EC%9D%BC-%EA%B6%8C%ED%95%9C%EB%B3%80%EA%B2%BD
+
+AWS 서버 접속시 Linux 기반이라 명령어 좀 다름...
+AWS 내 mariaDB 설치되어 있고 Mysql과 명령어 비슷함
+
+--------------------------------------------------------------------------------------------------
+
+23.02.17
+
+- BackEnd_Django 코드 구조 파악, 자료검색
+
+
+Django runserver 후 해당 url 접속 시 나오는 Django Adnim이 기본적으로 제공되는 기능이였음...
+ ㄴ Frontend 회원가입 후 로그인 시 해당 회원은 ---아닙니다. 라고 뜨는데
+     꼭 Django Admin 페이지에서 accont link 로 설정 해줘야하는지...? 다른 방법도 있는지
+
+SQLite3 를 실행중인 상태에서 장고 서버 실행 후 데이터 입력, 수정등 하면 500에러 뜸...
+- 해결 : db프로그램을 끄면 됨...
+SQLite는 경량 데이터베이스이므로 높은 수준의 동시성을 지원할 수 없습니다.
+https://stackoverflow.com/questions/3172929/operationalerror-database-is-locked
+
+지금 플젝-> local에 git clone 해놓고 해당 폴더경로로 파이썬,장고 모듈 다운받아서 서버 돌리는데
+가상환경 구축 후에 해당폴더에 git clone을 받아야할지...?
+
+ 
